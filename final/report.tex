@@ -240,28 +240,29 @@ With the above explicit formulas, we apply the augmented Lagrangian method with 
 
 The implementation is done in Julia. See Section 8 \textbf{Appendix} for the codes.
 
-Below is the numerical experiment of the surface mesh shown in Figure 1. The surface mesh consists of 88 vertices, in which 31 vertices are at boundary. The augmented Lagrangian method takes 12 iterations to converge.
+Below is the numerical experiment of the surface mesh shown in Figure 1. The surface mesh consists of 88 vertices, in which 31 vertices are at boundary. The augmented Lagrangian method takes 11 iterations to converge.
 
 \begin{center}
 \begin{tabular}{ |r|r|r|r| } 
  \hline
  Iteration & $\rho$ & $\| c(\mathbf{x}_k) \|$ & $\| \text{Grad}(\mathbf{x}_k) - [\nabla c (\mathbf{x}_k)] \mathbf{y}_k \|$ \\
  \hline
-     1 &    10 &     0.322200556833 &    4.296581324074 \\
-     2 &    20 &     0.162975113062 &    3.112602891839 \\
-     3 &    40 &     0.082049621748 &    3.275987170477 \\
-     4 &    80 &     0.041174790104 &    3.363717465205 \\
-     5 &   160 &     0.020626047938 &    3.409291123305 \\
-     6 &   320 &     0.010322832301 &    3.432540894415 \\
-     7 &   640 &     0.005163886443 &    3.444286516261 \\
-     8 &  1280 &     0.002582563077 &    3.450190167892 \\
-     9 &  2560 &     0.001291436788 &    3.453149787933 \\
-    10 &  5120 &     0.000645757242 &    3.454631557140 \\
-    11 &  5120 &     0.000000117213 &    0.000000000001 \\
-    12 &  5120 &     0.000000000072 &    0.000000000001 \\
+     1 &    10 &    0.219869662769 &    3.474162683887 \\
+     2 &    20 &    0.110261610250 &    2.182805069440 \\
+     3 &    40 &    0.055224136741 &    2.225978483471 \\
+     4 &    80 &    0.027637315846 &    2.247778475219 \\
+     5 &   160 &    0.013825249327 &    2.258770957372 \\
+     6 &   320 &    0.006914310456 &    2.264297284670 \\
+     7 &   640 &    0.003457581625 &    2.267069021520 \\
+     8 &  1280 &    0.001728898043 &    2.268457178338 \\
+     9 &  2560 &    0.000864475909 &    2.269151847922 \\
+    10 &  2560 &    0.000000148032 &    0.000000000001 \\
+    11 &  2560 &    0.000000000201 &    0.000000000002 \\
  \hline
 \end{tabular}
 \end{center}
+
+
 
 \section{Further work}
 
